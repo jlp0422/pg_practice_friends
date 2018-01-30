@@ -1,0 +1,7 @@
+{% extends './layout.html' %}
+ {% block content %}
+<h3>These are my friends</h3>
+{% for friend in friends %}
+<p>{{friend.first_name}} {{friend.last_name}}. I know him from {{friend.known.toLowerCase()}}</p>
+{% endfor %}
+ {% endblock %}
